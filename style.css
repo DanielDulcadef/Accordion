@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 1cm;
+    width: 100vw;
+}
+
+.panel{
+    
+    background-position: center;
+   
+    height: 80vh;
+    
+    color: #fff;
+    cursor: pointer;
+    background-size: cover;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    border-radius: 60px;
+    transition: 1000ms
+    
+
+
+}
+body{
+  font-family:  sans-serif;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ 
+  margin: 0;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .panel.active {
+    flex: 4;
+  }
+  
